@@ -47,7 +47,6 @@ const SearchBar: React.FC<{
         <MdOutlineCatchingPokemon
           size={40}
           className="search_button"
-          onClick={() => console.log("teste")}
         />
       </div>
       <h4>Pesquisar</h4>
@@ -62,7 +61,6 @@ const Pokedex: React.FC = () => {
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
   const handleOpenModal = (pokemon: Pokemon) => {
     setSelectedPokemon(pokemon);
-    console.log(pokemon)
     const cry = new Audio(pokemon.cries.latest)
     cry.volume = 0.07;
     cry.play();
