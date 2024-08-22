@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+
+
+
+h1{
+  font-size: 2em;
+  color: white;
+}
+
+
+
+header {
+  background-color: rgb(212, 28, 28);
+  margin: 0px;
+  padding: 20px;
+}
+footer { 
+  background-color: rgb(212, 28, 28);
+  margin: 0px;
+  padding: 1em;
+}
