@@ -76,7 +76,7 @@ const Pokedex: React.FC = () => {
   };
 
   const filteredPokemons = pokemons.filter((pokemon) =>
-    pokemon.name.toLowerCase().includes(searchQuery)
+    pokemon.name.toLowerCase().includes(searchQuery) || pokemon.id.toString() == searchQuery
   );
   useEffect(() => {
     const fetchPokemons = async () => {
